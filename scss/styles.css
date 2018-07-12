@@ -7,6 +7,10 @@ body {
   background: linear-gradient(to left, #003EFF, #1E90FF);
   color: #FFFFFF; }
 
+h3 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
 .title {
   font-family: 'Song Myung', serif;
   font-size: 26px;
