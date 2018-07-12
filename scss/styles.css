@@ -1,3 +1,10 @@
+body {
+  background: #003EFF;
+  background: -webkit-linear-gradient(right, #003EFF, #1E90FF);
+  background: -o-linear-gradient(right, #003EFF, #1E90FF);
+  background: linear-gradient(to left, #003EFF, #1E90FF);
+  color: #FFFFFF; }
+
 .albums {
   display: grid; }
   .albums .album {
