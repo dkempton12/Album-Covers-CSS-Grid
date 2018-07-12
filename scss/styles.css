@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500|Song+Myung");
+/* Style Variables */
 body {
   background: #003EFF;
   background: -webkit-linear-gradient(right, #003EFF, #1E90FF);
@@ -5,9 +7,34 @@ body {
   background: linear-gradient(to left, #003EFF, #1E90FF);
   color: #FFFFFF; }
 
+.title {
+  font-family: 'Song Myung', serif;
+  font-size: 26px;
+  text-align: center; }
+
 .albums {
-  display: grid; }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px; }
   .albums .album {
-    display: grid; }
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+    background: rgba(220, 220, 220, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto', sans-serif; }
+    .albums .album .album-image {
+      width: 100%; }
+    .albums .album .album-title {
+      font-weight: 500; }
+    .albums .album .about {
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.5px; }
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 36px; } }
 
 /*# sourceMappingURL=styles.css.map */

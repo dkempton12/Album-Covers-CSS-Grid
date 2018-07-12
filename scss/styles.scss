@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500|Song+Myung');
+
+/* Style Variables */
 $bg-1: #003EFF;
 $bg-2: #1E90FF;
 
@@ -11,9 +14,42 @@ body {
   color: $font;
 }
 
+.title {
+  font: {
+    family: 'Song Myung', serif;
+    size: 26px;
+  }
+  text-align: center;
+}
+
 .albums {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
   .album {
     display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+    background: rgba(220, 220, 220, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto', sans-serif;
+    .album-image {width: 100%;}
+    .album-title {
+      font-weight: 500;
+    }
+    .about {
+      font: {
+        size: 14px;
+        weight: 300;
+      }
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
   }
 }
